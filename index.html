@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority To-do List</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Priority To-do List</h1>
+        <form action="post">
+            <input type="text" name="task" id="task" placeholder="Enter a task" maxlength="20">
+            <input type="number" name="priority" id="priority" placeholder="0-10" min="0" max="10">
+            <input type="submit" name="submit" id="submit">
+        </form>
+        <h2>Task(s):</h2>
+        <ul id="toDoList">
+            <li>No Tasks Entered</li>
+        </ul>
+        <div id="clearButton">
+            <button>Clear all tasks</button>
+        </div>    
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
