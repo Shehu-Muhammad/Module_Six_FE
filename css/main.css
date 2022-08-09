@@ -79,5 +79,16 @@ button {
 div#clearButton {
     /* border: 1px solid slateblue; */
     width: 300px;
-    margin: 68% auto;
+    margin: 50px auto;
 }
+
+div#taskList {
+    height: 300px;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 50px;
+}
+
+
+
