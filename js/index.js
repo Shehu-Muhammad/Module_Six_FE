@@ -45,7 +45,6 @@ document.getElementById("toDoForm").addEventListener("submit", (e)=> {
     priorityArray = [];
 
     resetForm();
-    
 
 });
 
@@ -58,10 +57,7 @@ function taskTemplate() {
 let tasksList = document.querySelector("#toDoList").children.length;
 if(tasksList == 0) {
     taskTemplate();
-} else {
-    //do nothing;
-}
-
+} 
 
 function resetForm () {
     document.querySelector("#task").value = "";
@@ -74,5 +70,10 @@ function deleteTask () {
     tasksList.addEventListener("click", (e)=> {
         e.target.parentElement.parentElement.remove();
     })
+
+    tasksList = document.querySelector("#toDoList").children;
+    if(tasksList.length == 1) {
+        taskTemplate();
+    } 
 }
 

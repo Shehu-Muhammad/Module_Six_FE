@@ -76,6 +76,22 @@ button {
     text-align: center;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: green;
+    color: yellow;
+}
+
+input[type="submit"] {
+    box-shadow: 0 0 5px black;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: green;
+    color: yellow;
+}
+
 div#clearButton {
     /* border: 1px solid slateblue; */
     width: 300px;
@@ -90,5 +106,8 @@ div#taskList {
     padding-left: 50px;
 }
 
+img.trashcan {
+    padding-left: 30px;
+}
 
 
