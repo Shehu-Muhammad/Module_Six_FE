@@ -11,22 +11,18 @@
     <div class="container">
         <h1>Priority To-do List</h1>
         <form id="toDoForm">
-            <input type="text" name="task" id="task" placeholder="Enter a task" maxlength="20">
-            <input type="number" name="priority" id="priority" placeholder="0-10" min="0" max="10">
+            <input type="text" name="task" id="task" placeholder="Enter a task" maxlength="20" required>
+            <input type="number" name="priority" id="priority" placeholder="0-10" min="0" max="10" required>
             <input type="submit" name="submit" id="submit">
         </form>
         <h2>Task(s):</h2>
         <div id="taskList">
             <ul id="toDoList">
-                <!-- <li>No Tasks Entered</li>
-                <li>Task: Priority:
-                    <a href="#"><img src="assets/delete.png" alt="trashcan" width="20px"></a>
-                    <a href="#"><img src="assets/delete.png" alt="trashcan" width="20px"></a>
-                </li> -->
+
             </ul>
         </div>
         <div id="clearButton">
-            <button>Clear all tasks</button>
+            <button onclick="clearAllTasks()">Clear all tasks</button>
         </div>    
     </div>
     <script src="js/index.js"></script>

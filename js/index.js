@@ -69,10 +69,29 @@ function deleteTask () {
 
     tasksList.addEventListener("click", (e)=> {
         e.target.parentElement.parentElement.remove();
-    })
+    });
 
     tasksList = document.querySelector("#toDoList").children;
     if(tasksList.length == 1) {
+        taskTemplate();
+    } 
+}
+
+function clearAllTasks() {
+    let tasksList = document.querySelector("#toDoList");
+
+    if(tasksList.children.length > 0) {
+        if(tasksList.children[0].textContent == 'Enter a task --- Priority: ') {
+            tasksList.children[0].remove();
+        } else {
+            for(let index = 0; index < tasksList.children.length; index++) {
+                tasksList.children[index].remove();
+            }
+        }   
+    }
+    tasksList = document.querySelector("#toDoList").children;
+    if(tasksList.length == 1) {
+        tasksList[0].remove();
         taskTemplate();
     } 
 }
