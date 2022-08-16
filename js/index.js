@@ -1,3 +1,4 @@
+//a function to add a task to the list
 function addTaskToList(task, priority) {
     const node = document.createElement("li");
     const textnode = document.createTextNode(`${task} --- Priority: ${priority}`);
@@ -48,6 +49,7 @@ document.getElementById("toDoForm").addEventListener("submit", (e)=> {
 
 });
 
+//a function to reset form back to a template 
 function taskTemplate() {
     let task = "Enter a task";
     let priority = ""
@@ -59,11 +61,13 @@ if(tasksList == 0) {
     taskTemplate();
 } 
 
+// a function to reset task form
 function resetForm () {
     document.querySelector("#task").value = "";
     document.querySelector("#priority").value = "";
 }
 
+// a function to delete a task
 function deleteTask () {
     let tasksList = document.querySelector("#toDoList");
 
@@ -77,6 +81,7 @@ function deleteTask () {
     } 
 }
 
+// a function to clear all tasks
 function clearAllTasks() {
     let tasksList = document.querySelector("#toDoList");
 
