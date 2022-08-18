@@ -39,7 +39,7 @@ document.getElementById("toDoForm").addEventListener("submit", (e)=> {
     }
 
     for(let index = 0; index < taskArray.length; index++) {
-        addTaskToList(taskArray[index], priority[index]);
+        addTaskToList(taskArray[index], priorityArray[index]);
     }
 
     taskArray = [];
